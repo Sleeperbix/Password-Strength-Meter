@@ -1,161 +1,181 @@
-body { font-family: Arial, sans-serif; text-align: center; margin: 0px;}
-#password{
-    width: 500px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
-    text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+#password {
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  text-align: center;
 }
 
-
-#div-main{
-    padding: 20px;
-    background-color: rgb(238, 238, 238);
+#div-main {
+  padding: 20px;
+  background-color: rgb(238, 238, 238);
 }
 
-#div-password{
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    width: auto;
+#div-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
 
-#div-feedback{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    padding: 5px;
-    border-style: solid;
-    border-width: 1px;
-    background-color: rgb(201, 201, 201);
-    width: auto;
+#div-feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(201, 201, 201);
+  width: auto;
 }
 
 #feedback {
-    font: size 14px;
-    height: 30px;
-    margin-top: 5px;
-    font-weight: bold;
-    text-align: center;
+  font: size 14px;
+  height: 30px;
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: center;
 }
 
-#hibp-feedback{
-    min-height: 25px;
-    display: block;
-    font-weight: bold;
+#hibp-feedback {
+  min-height: 25px;
+  display: block;
+  font-weight: bold;
 }
 
-#div-hibp{
-    padding: 5px;
-    height: 75px;
-    border-style: solid;
-    border-width: 1px;
-    background-color: rgb(201, 201, 201);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
+#div-hibp {
+  padding: 5px;
+  height: 75px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.password-breached{color: red;}
-.password-safe{color: green;}
-.password-null{color: grey;}
-
-#div-text{
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    border-top: 2px solid black;
+.password-breached {
+  color: red;
+}
+.password-safe {
+  color: green;
+}
+.password-null {
+  color: grey;
 }
 
-#div-faq{
-    padding: 20px;
-    border-top: 2px solid black;
-    background-color: rgb(238, 238, 238);
+#div-text {
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  border-top: 2px solid black;
 }
 
-.containerH{
-    display: flex;
-    flex-direction: row;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
+#div-faq {
+  padding: 20px;
+  border-top: 2px solid black;
+  background-color: rgb(238, 238, 238);
 }
 
-.containerV
-{
-    display: flex;
-    flex-direction: column;
+.containerH {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
 
 .dropdown-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    padding: 0 10px;
-    border-left: 4px solid #007BFF;
-    margin-top: 5px;
-    background-color: #f8f9fa;
-    border-radius: 4px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 10px;
+  border-left: 4px solid #007bff;
+  margin-top: 5px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
 }
 
-
 .dropdown-header {
-    cursor: pointer;
-    color: #007BFF;
-    font-weight: bold;
-    margin-top: 10px;
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .dropdown-header:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.chevron{
-    transition: transform 0.2s ease-in-out;
-    margin-left: 10px;
-    display: inline-block;
+.chevron {
+  transition: transform 0.2s ease-in-out;
+  margin-left: 10px;
+  display: inline-block;
 }
 
-.strength-bar{
-    height: 10px;
-    max-width: 750px;
-    min-width: 100px;
-    background: lightgray;
-    margin: 10px auto;
-    border-radius: 5px;
+.strength-bar {
+  height: 10px;
+  max-width: 750px;
+  min-width: 100px;
+  background: lightgray;
+  margin: 10px auto;
+  border-radius: 5px;
 }
-.strength-fill{
-    height: 100%; width: 0%; transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; }
-.strength-fill.breached{
-    height: 100%; width: 100%; background: red; transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+.strength-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.strength-fill.breached {
+  height: 100%;
+  width: 100%;
+  background: red;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
 
-#feedback-container{
-    min-height: 80px;
-    width: 300px;
-    position: absolute;
-    right: 300px;
-    top: 50px;
+#feedback-container {
+  min-height: 80px;
+  width: 300px;
+  position: absolute;
+  right: 300px;
+  top: 50px;
 }
 
 /* Password Strength Colours */
-.veryweak  {background: red}
-.weak      {background: orange; }
-.moderate  {background: yellow; }
-.strong    {background: greenyellow; }
-.verystrong{background: green;}
+.veryweak {
+  background: red;
+}
+.weak {
+  background: orange;
+}
+.moderate {
+  background: yellow;
+}
+.strong {
+  background: greenyellow;
+}
+.verystrong {
+  background: green;
+}
 
 /* Character Set Indicators */
 .char-indicator {
-    color: grey; 
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: grey;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.char-indicator.active {color: green;}
+.char-indicator.active {
+  color: green;
+}
 
-.button{
+.button {
   background-color: #e6e6e6;
   border-radius: 8px;
   box-sizing: border-box;
@@ -172,6 +192,7 @@ body { font-family: Arial, sans-serif; text-align: center; margin: 0px;}
   vertical-align: baseline;
 }
 
-.button:hover, button:focus{
-    background-color: rgb(255, 255, 255);
+.button:hover,
+button:focus {
+  background-color: rgb(255, 255, 255);
 }
