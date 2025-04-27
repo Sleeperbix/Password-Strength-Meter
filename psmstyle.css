@@ -9,6 +9,13 @@ body {
   text-align: center;
 }
 
+.layout {
+  padding: 2rem, 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .title {
   display: flex;
   justify-content: center;
@@ -18,6 +25,39 @@ body {
   display: flex;
   align-items: first baseline;
   gap: 1rem;
+  padding-top: 2rem;
+}
+
+.password-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.button {
+  color: white;
+  background-color: #003cff;
+  border-color: #003cff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  box-shadow: none;
+}
+
+.button:hover,
+button:focus {
+  background-color: #278efd;
+  border-color: #278efd;
 }
 
 .flex-container {
@@ -33,6 +73,10 @@ body {
   gap: 0.2rem;
 }
 
+.horizontal-rule {
+  margin: 3rem 0 2rem 0;
+}
+
 #feedback {
   font: size 14px;
   font-weight: bold;
@@ -43,13 +87,6 @@ body {
   font-weight: bold;
 }
 
-#div-hibp {
-  height: 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .password-breached {
   color: red;
 }
@@ -58,14 +95,6 @@ body {
 }
 .password-null {
   color: grey;
-}
-
-.password-tips {
-  border-top: 2px solid black;
-}
-
-#div-faq {
-  border-top: 2px solid black;
 }
 
 .containerH {
@@ -81,13 +110,11 @@ body {
   padding: 0 10px;
   border-left: 4px solid #007bff;
   margin-top: 5px;
-  background-color: #f8f9fa;
   border-radius: 4px;
 }
 
 .dropdown-header {
   cursor: pointer;
-  color: #007bff;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -100,6 +127,7 @@ body {
   transition: transform 0.2s ease-in-out;
   margin-left: 10px;
   display: inline-block;
+  color: #007bff;
 }
 
 .strength-bar {
@@ -155,26 +183,4 @@ body {
 
 .char-indicator.active {
   color: green;
-}
-
-.button {
-  background-color: #e6e6e6;
-  border-radius: 8px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  height: 40px;
-  line-height: 20px;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-}
-
-.button:hover,
-button:focus {
-  background-color: rgb(255, 255, 255);
 }
