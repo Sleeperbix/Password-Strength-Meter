@@ -14,16 +14,7 @@ function rotate(header) {
     }
 }
 
-function checkPassword() {
-    document.getElementById("hide-password").addEventListener("change", function() {
-        let passwordField = document.getElementById("password");
-        if (this.checked) {
-            passwordField.type = "text";
-        } else {
-            passwordField.type = "password";
-        }
-    });
-    
+function checkPassword() {   
     let password = document.getElementById("password").value;
     let entropy = calculateEntropy(password);
     let strength = getStrength(password, entropy);
@@ -165,4 +156,16 @@ async function sha1(str) {
     const hashBuffer = await crypto.subtle.digest("SHA-1", buffer);
     const hashArray = Array.from(new Uint8Array(hashBuffer));
     return hashArray.map(b => b.toString(16).padStart(2, "0")).join("").toUpperCase();
+}
+
+//Show/Hide Password
+window.onload = function() {
+    document.getElementById("hide-password").addEventListener("change", function() {
+        let passwordField = document.getElementById("password");
+        if (this.checked) {
+            passwordField.type = "text";
+        } else{
+            passwordField.type = "password";
+        }
+    });
 }
